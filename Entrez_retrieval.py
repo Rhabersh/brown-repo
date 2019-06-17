@@ -9,13 +9,13 @@
 #
 ######################################################
 
-import Bio
 
 from Bio import Entrez
 
-from astropy.table import Table, Column
+import xmltodict, json, pprint
 
-import numpy as np
+#from astropy.table import Table, Column
+#import numpy as np
 
 Entrez.email = "ryan_habershaw@brown.edu"
 #Lets Entrez know who is using it
@@ -36,42 +36,16 @@ sra_fetch = Entrez.efetch(db = "sra", id = sra_id, rettype="text", retmode="xml"
 
 sra_table = sra_fetch.read()
 
-#print(sra_fetch.readline().strip())
-#print(sra_table)
+parse_table = xmltodict.parse(sra_table)
+#json_table = json.dumps(parse_table)
+#json_decode = json.loads(json_table)
+
+pp = pprint.PrettyPrinter(indent = 0, width = 25)
+pp.pprint(parse_table)
+
+#print(json.dumps(xmltodict.parse(sra_table)))
 
 
-#Everything contained in this box is for final output
-
-table = Table()
-table['Sample ID'] = [0]
-table['Library Read Type'] = Column([2.0])
-table['Experiment ID'] = ['x']
-table['Run Date'] = [1]
-table['Updated Date'] = [1]
-table['Spots'] = [1]
-table['Bases'] = [1]
-table['Run Center'] = [1]
-table['Experiment Name'] = [1]
-table['Library Name'] = [1]
-table['Library Strategy'] = [1]
-table['Library Source'] = [1]
-table['Library Selection'] = [1]
-table['Platform'] = [1]
-table['Instrument Model'] = [1]
-table['Instrument Name'] = [1]
-table['Taxon ID'] = [1]
-table['Common Name'] = [1]
-table['Study Type'] = [1]
-table['Center Proj. Name'] = [1]
-table['Submission Center'] = [1]
-table['Submission Lab'] = [1]
-table['JSON'] = [1]
-
-print(table)
-
-#####################################################
 
 sra_handle.close()
 sra_fetch.close()
-#Close both of the previously opened handles from 'esearch' and 'efetch'
-
