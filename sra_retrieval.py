@@ -7,7 +7,7 @@
 # Purpose: This code will search through the SRA database
 #         and pull down the relevant metadata. Conversion
 #         from xml to json will also be performed to
-#         appropriately represent retrieved data.
+#         make the parsing of that data into columns easier.
 #
 ######################################################
 
@@ -19,6 +19,8 @@ import ast
 from collections import OrderedDict
 from xml.etree.ElementTree import fromstring
 from xmljson import Abdera  # import the class
+from lxml import etree
+# from sra_load import *
 ######################
 
 ab = Abdera(dict_type=OrderedDict)  # pick dict class
@@ -31,7 +33,7 @@ def sra_query(email, samplemeta_id):
 
     :param email: The user's email
     :param samplemeta_id: The specified SRA_SRX id
-    :return: The xml data to be converted
+    :return sra_query.sra_table: The xml data to be converted
 
     """
 
@@ -53,12 +55,31 @@ def sra_query(email, samplemeta_id):
 
 sra_query('ryan_habershaw@brown.edu', 'SRS643408_SRX612442')
 
-# sra_dump = json.dumps(ab.data(fromstring(sra_query.sra_table)))
+
+def convert_to_json(xml):
+    """
+    This function will take the xml data obtained from the 'sra_query' function and convert that
+    to json.
+
+    :param xml: The data retrieved from 'sra_query' that needs to be converted
+    :return sra_dump: The json data to be later parsed into a table
+
+    """
+
+    xml = json.dumps(ab.data(fromstring(sra_query.sra_table)))
+    sra_dump = xml
+
+    return sra_dump
 
 
-def table_builder():
+convert_to_json(sra_query.sra_table)
 
-    val = ast.literal_eval(sra_query.sra_table)
-    val1 = json.loads(json.dumps(val))
-    val2 = val1['age'][0]['hometown'][0]['gender']
-    print(pd.DataFrame(val2, columns=['Sample_ID', 'PH', 'PH']))
+# Sra_Element.xml_metadata(sra_query.sra_table)
+
+
+# def table_builder():
+
+    # val = ast.literal_eval(sra_query.sra_table)
+    # val1 = json.loads(json.dumps(val))
+    # val2 = val1['age'][0]['hometown'][0]['gender']
+    # print(pd.DataFrame(val2, columns=['Sample_ID', 'PH', 'PH']))
