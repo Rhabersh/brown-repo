@@ -11,4 +11,3 @@ This is a public repository for storing source code related to active projects a
 3. README.md / The README for my repository
 4. sra_retrieval.py / A Python program that is the most up to date version of my work on issue-14.
 
-![Image of Github Joke]()
