@@ -1,0 +1,165 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 5144515
+##  Job Name : tmp_93549d.slurm
+##  Nodelist : node975
+##      CPUs : 1
+##  Mem/Node : 64000 MB
+## Directory : /gpfs_home/jwalla12
+##   Started : Wed Jun 26 11:03:38 EDT 2019
+###############################################################################
+***** Old PATH *****
+/gpfs/runtime/opt/intel/2017.0/bin:/gpfs/runtime/opt/python/2.7.12/bin:/gpfs/runtime/opt/matlab/R2017b/bin:/gpfs/runtime/opt/java/8u111/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/sbin:/opt/ibutils/bin:/gpfs/runtime/bin:/opt/singularity/2.5.2/bin:/users/jwalla12/bin
+**** Conda command***
+source /gpfs/runtime/cbc_conda/bin/activate_cbc_conda
+***** New PATH *****
+/gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/cbc_conda_v1/bin:/gpfs/runtime/opt/intel/2017.0/bin:/gpfs/runtime/opt/python/2.7.12/bin:/gpfs/runtime/opt/matlab/R2017b/bin:/gpfs/runtime/opt/java/8u111/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/sbin:/opt/ibutils/bin:/gpfs/runtime/bin:/opt/singularity/2.5.2/bin:/users/jwalla12/bin
+***** checking Java ****
+openjdk version "1.8.0_121"
+OpenJDK Runtime Environment (Zulu 8.20.0.5-linux64) (build 1.8.0_121-b15)
+OpenJDK 64-Bit Server VM (Zulu 8.20.0.5-linux64) (build 25.121-b15, mixed mode)
+***** checking env *****
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=node975
+MKLROOT=/gpfs/runtime/opt/intel/2017.0/mkl
+SLURM_JOB_NAME=tmp_93549d.slurm
+MANPATH=/gpfs/runtime/opt/intel/2017.0/man/common/man1:/gpfs/runtime/opt/python/2.7.12/share/man:
+SLURMD_NODENAME=node975
+SLURM_TOPOLOGY_ADDR=mlnx24.node975
+HOSTNAME=node975
+SLURM_NTASKS_PER_NODE=1
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+INTEL_LICENSE_FILE=/gpfs/runtime/opt/intel/2017.0/compilers_and_libraries_2017.0.098/linux/Licenses/USE_SERVER.lic
+SLURM_EXPORT_ENV=NONE
+SHELL=/bin/bash
+SLURM_JOB_QOS=pri-jwalla12
+HISTSIZE=1000
+TMPDIR=/tmp
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.node
+CONDA_SHLVL=1
+LIBRARY_PATH=/gpfs/runtime/opt/intel/2017.0/lib/intel64:/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64:/gpfs/runtime/opt/python/2.7.12/lib
+CONDA_PROMPT_MODIFIER=(cbc_conda_v1) 
+PYTHON_DIR=/gpfs/runtime/opt/python/2.7.12
+MMFS=/usr/lpp/mmfs
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+PERL_BADLANG=0
+QT_GRAPHICSSYSTEM_CHECKED=1
+SLURM_NNODES=1
+USER=jwalla12
+LD_LIBRARY_PATH=/gpfs/runtime/opt/intel/2017.0/lib/intel64:/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64:/gpfs/runtime/opt/python/2.7.12/lib:/gpfs/runtime/opt/java/8u111/jre/lib/amd64
+CONDA_EXE=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/bin/conda
+_CONDA_SET_TCL_LIBRARY=1
+TCL_LIBRARY=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/cbc_conda_v1/lib/tcl8.5
+SLURM_JOBID=5144515
+MODULEPYTHON=/usr/bin/python
+CPATH=/gpfs/runtime/opt/intel/2017.0/mkl/include:/gpfs/runtime/opt/python/2.7.12/include
+SLURM_NTASKS=1
+ENABLE_MODULELOGFAILOUT=y
+NLSPATH=/gpfs/runtime/opt/intel/2017.0/lib/intel64/locale/en_US:/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64/locale/en_US
+SLURM_TASKS_PER_NODE=1
+PATH=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/cbc_conda_v1/bin:/gpfs/runtime/opt/intel/2017.0/bin:/gpfs/runtime/opt/python/2.7.12/bin:/gpfs/runtime/opt/matlab/R2017b/bin:/gpfs/runtime/opt/java/8u111/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/usr/lpp/mmfs/sbin:/opt/ibutils/bin:/gpfs/runtime/bin:/opt/singularity/2.5.2/bin:/users/jwalla12/bin
+MAIL=/var/spool/mail/jwalla12
+SLURM_WORKING_CLUSTER=oscar:ut004:6810:8192
+MODULESHELL=bash
+ENABLE_MODULELOG=y
+SLURM_JOB_ID=5144515
+SLURM_CPUS_PER_TASK=8
+MKL_NUM_THREADS=1
+CONDA_PREFIX=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/cbc_conda_v1
+LD_RUN_PATH=/gpfs/runtime/opt/intel/2017.0/lib/intel64:/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64:/gpfs/runtime/opt/python/2.7.12/lib
+TBBROOT=/gpfs/runtime/opt/intel/2017.0/tbb
+PWD=/gpfs/data/cbc/qcdb_test/first_50
+JAVA_HOME=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/cbc_conda_v1
+MODULEPATH=/gpfs/runtime/modulefiles
+KDEDIRS=/usr
+LOADEDMODULES=java/8u111:matlab/R2017b:python/2.7.12:intel/2017.0
+SLURM_NODEID=0
+SLURM_SUBMIT_DIR=/gpfs_home/jwalla12
+SLURM_TASK_PID=22865
+SLURM_NPROCS=1
+SLURM_CPUS_ON_NODE=8
+SLURM_PROCID=0
+ENVIRONMENT=BATCH
+HISTCONTROL=ignoredups
+SLURM_JOB_NODELIST=node975
+HOME=/users/jwalla12
+SHLVL=2
+SLURM_LOCALID=0
+SLURM_GET_USER_ENV=1
+SLURM_JOB_GID=1061
+SLURM_JOB_CPUS_PER_NODE=8
+SLURM_CLUSTER_NAME=oscar
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=login003
+IPP_PATH=/gpfs/runtime/opt/intel/2017.0/ipp
+SLURM_JOB_PARTITION=batch
+MATLAB_ROOT=/gpfs/runtime/opt/matlab/R2017b
+CONDA_PYTHON_EXE=/gpfs/runtime/cbc_conda/cbc_conda_v1_root/bin/python
+LOGNAME=jwalla12
+MATLAB=/gpfs/runtime/opt/matlab/R2017b
+QTLIB=/usr/lib64/qt-3.3/lib
+SLURM_JOB_ACCOUNT=default
+MODULEHOME=/gpfs/runtime/pymodules
+SLURM_JOB_NUM_NODES=1
+JAVA_HOME_CONDA_BACKUP=/gpfs/runtime/opt/java/8u111
+CONDA_DEFAULT_ENV=cbc_conda_v1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+PKG_CONFIG_PATH=/gpfs/runtime/opt/python/2.7.12/lib/pkgconfig
+MKL=-L/gpfs/runtime/opt/intel/2017.0/mkl/lib/intel64 -lmkl_rt -liomp5 -lpthread
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+SLURM_MEM_PER_NODE=64000
+BASH_FUNC_module()=() {  eval `${MODULEPYTHON} ${MODULEHOME}/modulecmd.py $*`
+}
+BASH_FUNC_moduledb()=() {  ${MODULEPYTHON} ${MODULEHOME}/moduledb.py $*
+}
+_=/bin/printenv
+***** printing JOB INFO *****
+batch script for job 5144515 written to /tmp/tmp.1hSkXkWUDg
+#!/bin/sh
+
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+#SBATCH --ntasks-per-node=1
+#SBATCH --workdir /gpfs/data/cbc/qcdb_test/first_50
+#SBATCH --output /gpfs/data/cbc/qcdb_test/first_50/logs/SRS4807080_SRX5884550_gsnap_slurm.stdout
+#SBATCH --error /gpfs/data/cbc/qcdb_test/first_50/logs/SRS4807080_SRX5884550_gsnap_slurm.stderr
+#SBATCH --mem=64000
+#SBATCH --time 16:40:00
+
+## EXEC
+ 
+#SBATCH --export=NONE
+
+set -e
+echo '***** Old PATH *****'
+echo $PATH
+echo '**** Conda command***'
+echo 'source /gpfs/runtime/cbc_conda/bin/activate_cbc_conda'
+source /gpfs/runtime/cbc_conda/bin/activate_cbc_conda
+
+echo '***** New PATH *****'
+echo $PATH
+
+
+echo '***** checking Java ****'
+java -version 2>&1 
+
+
+echo '***** checking env *****'
+printenv
+
+
+echo '***** printing JOB INFO *****'
+
+SCRIPT_TMP_FILE=`mktemp`
+
+scontrol write batch_script $SLURM_JOBID $SCRIPT_TMP_FILE
+
+cat $SCRIPT_TMP_FILE 
+
+rm -f $SCRIPT_TMP_FILE
+
+
+srun --export=ALL gsnap  -t 8 --gunzip -A sam -N1 --use-shared-memory=0 -d Ensembl_Homo_sapiens_GRCh37 -s /gpfs/data/cbc/cbcollab/cbc_ref/gmapdb_2017.01.14/Ensembl_Homo_sapiens_GRCh37/Ensembl_Homo_sapiens_GRCh37.maps/Ensembl_Homo_sapiens.GRCh37.87.splicesites.iit /gpfs/data/cbc/qcdb_test/first_50/fastq/SRS4807080_SRX5884550_1.fq.gz /gpfs/data/cbc/qcdb_test/first_50/fastq/SRS4807080_SRX5884550_2.fq.gz 2>>/gpfs/data/cbc/qcdb_test/first_50/logs/SRS4807080_SRX5884550_gsnap_err.log 1>/gpfs/data/cbc/qcdb_test/first_50/alignments/SRS4807080_SRX5884550.sam
+ echo 'DONE' > /gpfs/data/cbc/qcdb_test/first_50/checkpoints/SRS4807080_SRX5884550_gsnap_.sam_502f23e56cfa27f93e717121073183cbae78114349ee150c6a8f7e90.txt
