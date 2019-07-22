@@ -1,0 +1,16 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 4662406
+##  Job Name : tmp_IJSBl8.slurm
+##  Nodelist : node1308
+##      CPUs : 1
+##   Mem/CPU : 2800 MB
+## Directory : /gpfs_home/jwalla12
+##   Started : Fri Jun  7 14:55:07 EDT 2019
+###############################################################################
+2019-06-07T18:55:10 fastq-dump.2.8.0: Seeding the random number generator 
+2019-06-07T18:55:10 fastq-dump.2.8.0: Loading CA root certificates 
+2019-06-07T18:55:10 fastq-dump.2.8.0: Configuring SSl defaults 
+Read 41497399 spots for /gpfs/data/cbc/qcdb_test/first_50/sra/SRR9110265
+Written 41497399 spots for /gpfs/data/cbc/qcdb_test/first_50/sra/SRR9110265
+‘/gpfs/data/cbc/qcdb_test/first_50/fastq/SRR9110265_1.fastq.gz’ -> ‘/gpfs/data/cbc/qcdb_test/first_50/fastq/SRS4807080_SRX5884550_1.fq.gz’
+‘/gpfs/data/cbc/qcdb_test/first_50/fastq/SRR9110265_2.fastq.gz’ -> ‘/gpfs/data/cbc/qcdb_test/first_50/fastq/SRS4807080_SRX5884550_2.fq.gz’
