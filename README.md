@@ -17,3 +17,5 @@ This is a public repository for storing source code related to active projects a
 ***The following are the projects I worked on while an intern in the CCV data science team at Brown University CIS.***
 
 1. QCDB / I worked on issue-14, where I wrote code to pull SRA metadata and convert that xml into a json format.
+2. CK_Huang / I used RStudio to study several markdown files and provide generated reports on additional data needed for verification that the code is working the way it should. 
+3. Oscar Resource Table / WIP
