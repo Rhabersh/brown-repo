@@ -11,9 +11,11 @@ rx_dict = {
 
 def line_parser(line):
     """
+        This function will search each line in the target file(s) and
+        search for the regex's specified in rx_dict
 
-    :param line:
-    :return:
+        :param line: The line of the file that will be searched for regex matches.
+        :return None:
     """
     for key, rx in rx_dict.items():
         match = rx.search(line)
@@ -24,6 +26,14 @@ def line_parser(line):
 
 
 def file_parser(file_name):
+    """
+        This function will parse the file(s) with help from the line_parser function,
+        it will then store those matches in a dictionary that will be used to
+        create a data-frame.
+
+        :param file_name: The file(s) to be parsed
+        :return slurm_data: The completed data-frame
+    """
     slurm_data = []
 
     with open(file_name, 'r') as file_object:
