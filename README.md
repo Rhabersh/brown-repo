@@ -10,7 +10,7 @@ This is a public repository for storing source code related to active projects a
 2. Entrez_retrieval.py / A Python program that was the start of my work on issue-14 ****see compbiocore/qcdb/issue-14***
 3. README.md / The README for my repository
 4. sra_retrieval.py / A Python program that is the most up to date version of my work on issue-14.
-5. oscar_resource_table / Project folder for the resource table that will be used bu users of Oscar.
+5. oscar_resource_table / Project folder for the resource table that will be used with job scheduling on Oscar.
 
 
 # Projects Worked On
