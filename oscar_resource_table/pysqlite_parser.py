@@ -2,7 +2,7 @@ import re
 import pandas as pd
 
 rx_dict = {
-    'Job ID': re.compile(r'Job ID = (?P<job_ID>.*)\n'),
+    'Job ID': re.search('\s+ Job ID : \d+', 0),
     'CPUs': re.compile(r'CPUs = (?P<cpus>\d+)\n'),
     'Memory': re.compile(r'Mem/CPU = (?P<memory>\d+)\n'),
     'Time': re.compile(r'Started = (?P<time>\d+)\n'),
