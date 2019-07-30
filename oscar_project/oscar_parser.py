@@ -10,9 +10,10 @@ class OscarParser:
                             'SRS4807080_SRX5884550_gsnap_slurm.stdout',
                             'SRS4807080_SRX5884550_samtools_view_round_2_slurm.stdout',
                             'SRS4807080_SRX5884550_samtools_view_slurm.stdout']
+        self.job_id = 0
+        self.job_id_list = []
 
     def get_id(self):
-        job_id_list = []
         for i in range(len(self.slurm_files)):
             slurm_data = open(self.slurm_files[i], 'r')
 
@@ -25,15 +26,15 @@ class OscarParser:
             just_digits = all_chars.translate(all_chars, string.digits)
             self.job_id = temp.translate(all_chars, just_digits)
 
-            job_id_list.append(self.job_id)
+            self.job_id_list.append(self.job_id)
 
             i = i + 1
 
-        print job_id_list
-        return job_id_list
+        print self.job_id_list
+        return self.job_id_list
 
     def parser(self):
-        subprocess.call('sacct -u -j self.job_id', shell=True)
+        subprocess.check_output('sacct -u -j self.job_id', shell=True)
 
 
 parsed_data = OscarParser()
