@@ -8,7 +8,7 @@ def sqlite_connect():
         specified database is not found in the local directory, a new one with
         the given name will be created.
 
-        :return sqlite_con: The active database connection.
+        :return sqlite_con: The active d
     """
     try:
         sqlite_con = sqlite3.connect('slurm_database.db')
